@@ -1,0 +1,8 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    { "name": "Flutter BLoC Clean Architecture (local)", "request": "launch", "type": "dart", "args": ["--dart-define-from-file=env/local.json"] },
+    { "name": "Flutter BLoC Clean Architecture (uat)", "request": "launch", "type": "dart", "args": ["--dart-define-from-file=env/uat.json"] },
+    { "name": "Flutter BLoC Clean Architecture (production)", "request": "launch", "type": "dart", "flutterMode": "release", "args": ["--dart-define-from-file=env/production.json"] }
+  ]
+}

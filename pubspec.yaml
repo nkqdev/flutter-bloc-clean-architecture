@@ -1,0 +1,76 @@
+name: flutter_bloc_clean_architecture
+description: "Flutter BLoC Clean Architecture template (BLoC, get_it, Retrofit, Freezed)."
+publish_to: 'none'
+
+version: 1.0.0
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+  cupertino_icons: ^1.0.8
+
+  # State management & DI
+  flutter_bloc: ^9.1.1
+  get_it: ^9.0.5
+
+  # Functional & code generation annotations
+  dartz: ^0.10.1
+  meta: any
+  freezed_annotation: ^3.1.0
+  json_annotation: ^4.9.0
+
+  # Networking
+  dio: ^5.7.0
+  retrofit: 4.7.3
+  dio_curl_logger: ^1.2.0
+
+  # Storage
+  flutter_secure_storage: ^9.2.4
+
+  # Utilities
+  event_bus: ^2.0.0
+  package_info_plus: ^9.0.0
+
+  # UI
+  flutter_screenutil: ^5.9.3
+  flutter_native_splash: ^2.4.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  build_runner: ^2.4.12
+  freezed: ^3.0.6
+  json_serializable: ^6.8.0
+  retrofit_generator: ^9.6.0
+  bloc_test: ^10.0.0
+  mocktail: ^1.0.4
+
+# Native splash (Android, Android 12+, iOS). Regenerate after editing:
+#   fvm dart run flutter_native_splash:create
+# Replace assets/splash/*.png with the real logo; keep the same sizes.
+flutter_native_splash:
+  color: "#6750A4"            # Flutter default M3 primary (AppColors.primaryColor)
+  image: assets/splash/splash_logo.png
+  color_dark: "#141218"       # Flutter default M3 dark surface
+  image_dark: assets/splash/splash_logo.png
+  android_12:
+    color: "#6750A4"
+    image: assets/splash/splash_logo_android12.png
+    color_dark: "#141218"
+    image_dark: assets/splash/splash_logo_android12.png
+  web: false
+
+flutter:
+  generate: true
+  uses-material-design: true
+
+  assets:
+    - lib/assets/images/
+    - lib/assets/icons/

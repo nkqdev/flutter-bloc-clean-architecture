@@ -1,0 +1,10 @@
+{
+  "APP_ENV": "production",
+  "API_BASE_URL": "https://api.example.com",
+  "APP_CLIENT_ID": "flutter-bloc-clean-architecture-mobile",
+  "NETWORK_CONNECT_TIMEOUT_SECONDS": 30,
+  "NETWORK_RECEIVE_TIMEOUT_SECONDS": 30,
+  "ENABLE_SCREEN_SCALING": false,
+  "DESIGN_WIDTH": 390,
+  "DESIGN_HEIGHT": 844
+}
